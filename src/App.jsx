@@ -8,6 +8,7 @@ import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
 import Homepage from "./components/Homepage";
 import Rooms from "./components/Rooms";
+import KnowMore from "./components/KnowMore";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/Blogs" element={<Blogs />} />
           <Route path="/Contact" element={<Contact />} />
 
+          <Route path="/KnowMore" element={<KnowMore />} />
           <Route path="/Rooms" element={<Rooms />} />
         </Routes>
         <Footer />

@@ -5,6 +5,8 @@ import call from "../images/icons/call-calling.svg";
 import calendar from "../images/icons/calendar.svg";
 import instagram from "../images/icons/instagram.svg";
 
+import facebook from "../images/icons/facebook.svg";
+
 import pin from "../images/icons/pin.svg";
 import { Link } from "react-router-dom";
 
@@ -50,7 +52,7 @@ const Header = () => {
                 href="#"
                 class="hover:opacity-80 transition ease-in-out duration-300"
               >
-                <img src="../src/images/icons/facebook.svg" alt="" />
+                <img src={facebook} alt="" />
               </a>
             </li>
             <li class="font-medium uppercase text-white ms-2 text-xs md:text-sm tracking-widest mt-[2px]">
@@ -125,12 +127,12 @@ const Header = () => {
                 </li>
               </ul>
 
-              <a
-                href="#"
+              <Link
+                to="/KnowMore"
                 class="w-full h-[42px] px-7 uppercase flex items-center justify-center bg-lion tracking-widest font-medium text-white mt-4 hover:bg-lion-dark md:mt-0 md:min-w-[140px] ms-6"
               >
                 know more
-              </a>
+              </Link>
             </div>
           </nav>
           <div class="flex-1 flex items-center justify-stretch flex-col text-center py-12">
