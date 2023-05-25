@@ -69,12 +69,12 @@ const Nav = () => {
               </li>
             </ul>
 
-            <a
-              href="/KnowMore"
+            <Link
+              to="/KnowMore"
               class="w-full h-[42px] px-7 uppercase flex items-center justify-center bg-lion tracking-widest font-medium text-white mt-4 hover:bg-lion-dark md:mt-0 md:min-w-[140px] ms-6"
             >
               know more
-            </a>
+            </Link>
           </div>
         </nav>
       </div>

@@ -4,6 +4,7 @@ import pattern1 from "../images/decorated-pattern.svg";
 import blog1 from "../images/blogs-1.png";
 import blog2 from "../images/blogs-2.png";
 import blog3 from "../images/blogs-3.png";
+import { Link } from "react-router-dom";
 
 const Blogs = () => {
   return (
@@ -19,8 +20,8 @@ const Blogs = () => {
           </div>
 
           <div class="grid mt-10 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 lg:gap-10">
-            <a
-              href="#"
+            <Link
+              to="/Article"
               class="transition duration-300 ease-in-out hover:-translate-y-5"
             >
               <div class="min-h-[400px]">
@@ -29,10 +30,10 @@ const Blogs = () => {
               <div class="bg-white text-coyote text-center text-lg sm:text-xl font-gilda font-medium tracking-widest uppercase py-6 px-4">
                 historic restaurant renovation
               </div>
-            </a>
+            </Link>
 
-            <a
-              href="#"
+            <Link
+              to="/Article"
               class="transition duration-300 ease-in-out hover:-translate-y-5"
             >
               <div class="min-h-[400px]">
@@ -41,10 +42,10 @@ const Blogs = () => {
               <div class="bg-white text-coyote text-center text-lg sm:text-xl font-gilda font-medium tracking-widest uppercase py-6 px-4">
                 historic restaurant renovation
               </div>
-            </a>
+            </Link>
 
-            <a
-              href="#"
+            <Link
+              to="/Article"
               class="transition duration-300 ease-in-out hover:-translate-y-5"
             >
               <div class="min-h-[400px]">
@@ -53,7 +54,7 @@ const Blogs = () => {
               <div class="bg-white text-coyote text-center text-lg sm:text-xl font-gilda font-medium tracking-widest uppercase py-6 px-4">
                 historic restaurant renovation
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -86,12 +86,12 @@ const Header = () => {
               </button>
               <ul class="flex flex-col w-full text-center mt-[60px] md:flex-row md:mt-0">
                 <li class="py-3 border-b-[1px] border-solid md:py-0 md:border-none">
-                  <a
-                    href="/"
+                  <Link
+                    to="/"
                     class="text-eerie-black uppercase text-md tracking-[.12em] font-medium hover:text-lion transition duration-300 ease-in-out md:mx-[14px] xl:mx-5 2xl:mx-6 md:text-white"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li class="py-3 border-b-[1px] border-solid md:py-0 md:border-none">
                   <Link
