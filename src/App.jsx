@@ -10,23 +10,27 @@ import Homepage from "./components/Homepage";
 import Rooms from "./components/Rooms";
 import KnowMore from "./components/KnowMore";
 import Article from "./components/Article";
+import Drawer from "./components/Drawer";
+import("preline");
 
 const App = () => {
   return (
     <div>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/Gallery" element={<Gallery />} />
-          <Route path="/Blogs" element={<Blogs />} />
-          <Route path="/Contact" element={<Contact />} />
+      <div>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/Gallery" element={<Gallery />} />
+            <Route path="/Blogs" element={<Blogs />} />
+            <Route path="/Contact" element={<Contact />} />
 
-          <Route path="/KnowMore" element={<KnowMore />} />
-          <Route path="/Rooms" element={<Rooms />} />
-          <Route path="/Article" element={<Article />} />
-        </Routes>
-        <Footer />
-      </Router>
+            <Route path="/KnowMore" element={<KnowMore />} />
+            <Route path="/Rooms" element={<Rooms />} />
+            <Route path="/Article" element={<Article />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </div>
     </div>
   );
 };

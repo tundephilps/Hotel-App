@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Siderbar from "./Siderbar";
 
 const Nav = () => {
   return (
@@ -15,7 +16,9 @@ const Nav = () => {
               class="text-white md:hidden"
               id="navbar-show-btn"
             >
-              <i class="fas fa-bars"></i>
+              <div className="flex">
+                <Siderbar />
+              </div>
             </button>
           </div>
           <div class="navbar-box fixed top-0 right-0 w-[280px] h-full bg-white p-5 flex flex-col items-center font-barlow-cond translate-x-full transition duration-300 ease-in-out md:relative md:translate-x-0 md:bg-transparent md:flex-row md:h-auto md:w-auto md:p-0">
